@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Employee Credentials  List</title>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="projectcode">Email</label>
+                        <input type="text" name="projectcode" id="projectcode">
+                    </div>
+                   
+                    <div>
+                        <label for="status">Password</label>
+                        <input type="text" name="status" id="status">
+                    </div>
+                    <div>
+                        <label for="perPrice">Mobile Number</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+                    <div>Gender</div>
+                    <div>
+                       <input type="radio" name="projectdate" id="projectdate" value="Male" checked> 
+                       <label for="projectdate">Male</label>
+                       <input type="radio" name="projectdate" id="projectdate" value="Female">
+                       <label for="projectdate">Female</label>
+                   </div>
+                    <div>
+                    <textarea name="Address"  id="Address" cols="30" rows="10">
+                 Provide Address
+                    </textarea>
+                    </div>
+
+                    <div class="form_action--button">
+                        <input type="submit" value="Submit">
+                        <input type="reset" value="Reset">
+                    </div>
+                </form>
+
+                <td>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>Email </th>
+                                <th>Gender</th>
+                                <th>Password</th>
+                                <th>Mobile number</th>
+                                <th>Address</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
